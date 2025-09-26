@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kdub Motorworks - MS43 N/A Tune</title>
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    .product-options {
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    .product-options label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 60px;
+    }
+    #final-price {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .highlight {
+      border: 2px solid red;
+    }
+    #add-to-cart.disabled-btn {
+      background-color: #ccc;
+      color: #666;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<section class="product-details">
+  <h2>MS43 N/A Tune</h2>
+  <img src="../../media/ms43natune.jpg" alt="MS43 N/A Tune" style="width:100%; max-width:500px; display:block; margin:auto; border-radius:10px;">
+
+  <div class="product-options">
+    <label for="model">Model:</label>
+    <select id="model">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">320i</option>
+      <option value="0">320ci</option>
+      <option value="0">325i</option>
+      <option value="0">325ci</option>
+      <option value="0">325xi</option>
+      <option value="0">328ci</option>
+      <option value="0">328xi</option>
+      <option value="0">330i</option>
+      <option value="0">330ci</option>
+      <option value="0">330xi</option>
+      <option value="0">520i</option>
+      <option value="0">525i</option>
+      <option value="0">530i</option>
+      <option value="0">X5 3.0i</option>
+      <option value="0">Z3 Coupe</option>
+      <option value="0">Z3 Roadster</option>
+      <option value="0">Custom (Specify in "Other Mods" box)</option>
+    </select>
+
+    <label for="transmission">Transmission:</label>
+    <select id="transmission">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">Automatic</option>
+      <option value="0">Manual</option>
+    </select>
+
+    <label for="vanos">Vanos Tweak:</label>
+    <select id="vanos">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">Stock</option>
+      <option value="25">Extra Midrange Power ($25)</option>
+    </select>
+
+    <label for="throttle">Throttle Response:</label>
+    <select id="throttle">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">Stock</option>
+      <option value="25">Linear ($25)</option>
+      <option value="25">Aggressive ($25)</option>
+    </select>
+
+    <label for="intakeManifold">Intake Manifold:</label>
+    <select id="intakeManifold">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">Stock</option>
+      <option value="25">M50 Manifold ($25)</option>
+    </select>
+
+    <label for="revlimiter">Rev Limiter:</label>
+    <select id="revlimiter">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">Stock</option>
+      <option value="0">ZHP (6800)</option>
+      <option value="0">OEM+ (7000)</option>
+      <option value="0">Custom (Specify in "Other Mods" box)</option>
+    </select>
+
+    <label for="limiterAggressiveness">Limiter Aggressiveness:</label>
+    <select id="limiterAggressiveness">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">Stock</option>
+      <option value="0">Hard</option>
+      <option value="25">Hard + Ignition Cut ($25)</option>
+    </select>
+
+    <label for="idleRpm">Idle RPM:</label>
+    <select id="idleRpm">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">Stock</option>
+      <option value="0">Raised 200rpm</option>
+      <option value="0">Custom (Specify in "Other Mods" box)</option>
+    </select>
+
+    <label for="fakeCamChop">Fake Cam Chop:</label>
+    <select id="fakeCamChop">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">Off</option>
+      <option value="25">On ($25)</option>
+    </select>
+
+    <label for="popsBangs">Pops and Bangs:</label>
+    <select id="popsBangs">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">Off</option>
+      <option value="25">Timered ($25)</option>
+      <option value="25">Active A/C On. OEM = A/C Off ($25)</option>
+      <option value="25">Active A/C Off. OEM = A/C On ($25)</option>
+      <option value="25">Active with cruise control On ($25)</option>
+      <option value="25">Active with cruise control Off ($25)</option>
+      <option value="25">Always active ($25)</option>
+    </select>
+
+    <label for="popBangAgg">Pop and Bang Aggressiveness:</label>
+    <select id="popBangAgg">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">Off</option>
+      <option value="0">Mild</option>
+      <option value="25">Aggressive ($25)</option>
+    </select>
+
+    <label for="launchControl">Launch Control: (Manual transmission ONLY)</label>
+    <select id="launchControl">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">Disabled</option>
+      <option value="25">Enabled when clutch pressed ($25)</option>
+      <option value="25">Enabled when clutch pressed and cruise control armed ($25)</option>
+    </select>
+
+    <label for="exhaust">Exhaust Headers:</label>
+    <select id="exhaust">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">Stock</option>
+      <option value="0">Cat-less</option>
+    </select>
+
+    <label for="cat">Cat Bypass:</label>
+    <select id="cat">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">None</option>
+      <option value="0">SAP</option>
+      <option value="0">Rear Post-Cat 02 sensors</option>
+      <option value="0">Rear Post-Cat 02 sensors + SAP</option>
+    </select>
+
+    <label for="instrumentCluster">M3/5 Instrument Cluster LEDs:</label>
+    <select id="instrumentCluster">
+      <option value="" selected disabled>-Please Select-</option>
+      <option value="0">Disabled</option>
+      <option value="25">Enabled ($25)</option>
+    </select>
+
+    <label for="otherMods">Other Mods (Custom Requests / Specifications):</label>
+    <textarea id="otherMods" placeholder="Enter any specific custom modifications here..."></textarea>
+
+    <div id="final-price">Price: $100.00</div>
+    <button id="add-to-cart" class="disabled-btn" style="padding:10px 15px; margin-top:15px; font-weight:bold;">Add to Cart</button>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Kdub Motorworks | Built by Kdub
+</footer>
+
+<script src="../../header.js"></script>
+<script src="../../cart.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const optionIds = [
+    'model', 'transmission', 'vanos', 'throttle', 'intakeManifold', 'revlimiter', 'limiterAggressiveness',
+    'idleRpm', 'fakeCamChop', 'popsBangs', 'popBangAgg', 'launchControl',
+    'exhaust', 'cat', 'instrumentCluster'
+  ];
+  const options = optionIds.map(id => document.getElementById(id));
+
+  const finalPriceEl = document.getElementById('final-price');
+  const addToCartBtn = document.getElementById('add-to-cart');
+  const otherModsInput = document.getElementById('otherMods');
+
+  function updatePrice() {
+    let total = 100;
+    let allSelected = true;
+
+    options.forEach(select => {
+      if (!select.value) {
+        allSelected = false;
+      } else {
+        total += parseFloat(select.value);
+      }
+    });
+
+    finalPriceEl.textContent = "Price: $" + total.toFixed(2);
+
+    if (allSelected) {
+      addToCartBtn.classList.remove('disabled-btn');
+    } else {
+      addToCartBtn.classList.add('disabled-btn');
+    }
+
+    return allSelected;
+  }
+
+  options.forEach(select => {
+    select.addEventListener('change', () => {
+      const firstOption = select.options[0];
+      if (firstOption.value === "") firstOption.disabled = true;
+      // Remove highlight only for this select
+      if (select.value) select.classList.remove('highlight');
+      updatePrice();
+    });
+  });
+
+  addToCartBtn.addEventListener('click', () => {
+    const allSelected = updatePrice();
+
+    if (!allSelected) {
+      options.forEach(select => {
+        if (!select.value) select.classList.add('highlight');
+      });
+      return;
+    }
+
+    const productName = "MS43 N/A Tune";
+    const totalPrice = parseFloat(finalPriceEl.textContent.replace("Price: $", ""));
+    const notes = otherModsInput.value.trim();
+
+    const config = {};
+    options.forEach(select => {
+      const label = document.querySelector('label[for="' + select.id + '"]').textContent;
+      const choice = select.options[select.selectedIndex].text;
+      config[label] = choice;
+    });
+    if (notes) config["Other Mods"] = notes;
+
+    if (typeof addProductToCart === 'function') {
+      addProductToCart({ name: productName, price: totalPrice, config });
+    } else {
+      console.error("Cart system not loaded yet!");
+    }
+  });
+
+  updatePrice();
+});
+</script>
+</body>
+</html>
